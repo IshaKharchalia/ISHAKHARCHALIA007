@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url("D:\\Isha College\\Images\\madgav.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.3)
+    );
+}
+
+/* Main Content */
+.content {
+    position: relative;
+    display: flex;
+    height: 100%;
+    padding: 100px;
+}
+
+/* Left Section */
+.left {
+    width: 40%;
+   
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.left h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.icons span {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.play-btn:hover {
+    background: #000000;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.747);
+   
+  transform: scale(1.1);
+}
+.play-btn {
+    position:relative;
+    margin-top: 30px;
+    
+    background: grey;
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    transition: background-color 1s ease-out, transform 1s ease-out;
+}
+
+
+
+.ads {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Right Section */
+.right {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.meta {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.cast {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.age {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px 10px;
+    border: 1px solid #fff;
+    width: fit-content;
+    font-size: 14px;
+}

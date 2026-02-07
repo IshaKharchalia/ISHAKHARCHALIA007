@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* GRID */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+}
+
+/* CARD */
+.movie-card {
+    width: 200px;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* IMAGE */
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* TITLE */
+.movie-card h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* GENRE */
+.movie-card p {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+/* HOVER */
+.movie-card:hover {
+    transform: scale(1.08);
+    z-index: 10;
+}
